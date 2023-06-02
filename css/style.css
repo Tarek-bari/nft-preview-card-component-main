@@ -1,0 +1,124 @@
+:root {
+    /* Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: Outfit;
+    font-size: 18px;
+    background-color: var(--Very-dark-blue-main-BG);
+    color: white;
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+
+}
+
+.card {
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: .8rem;
+    max-width: calc(375px - 1rem);
+    overflow: hidden;
+    display: grid;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.card .image {
+    cursor: pointer;
+    position: relative;
+}
+
+.card .image img {
+    border-radius: .4rem;
+
+}
+
+.card .image svg {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.card .image:hover svg {
+    display: block;
+}
+
+.card .content {
+    display: grid;
+    gap: 1rem;
+}
+
+.card .content .title,
+.saler .name {
+    cursor: pointer;
+    transition: .1s;
+}
+
+.card .content .title:hover {
+    color: var(--Cyan);
+}
+
+.saler .name:hover {
+    color: var(--Cyan);
+}
+
+.saler {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0 .5rem 0;
+}
+
+.saler::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    background-color: white;
+    opacity: .1;
+}
+
+.saler .avatar img {
+    width: 24px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+}
+
+.info-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-product .price {
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+    color: var(--Cyan);
+
+}
+
+.info-product .time-left {
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+    color: var(--Soft-blue);
+}
+
+.saler .sign {
+    padding-right: .6rem;
+    color: var(--Soft-blue);
+}
+
+.description {
+    color: var(--Soft-blue);
+}
