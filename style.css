@@ -45,7 +45,7 @@ body {
 
 }
 
-.card .image img:hover {
+.card .image:hover img {
     opacity: .5;
 }
 
