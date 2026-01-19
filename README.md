@@ -75,5 +75,5 @@ I'm planning to use grid and animation also rest advanced features of CSS. In ad
 
 ## Acknowledgments
 
-Many thanks and appreciation to the users of @Frontendmentor especially @@hitmorecode and @@davidochoadev.
+Many thanks and appreciation to the users of @Frontendmentor especially @hitmorecode and @@davidochoadev.
 I was inspired to find a solution based on thier feedbacks.
